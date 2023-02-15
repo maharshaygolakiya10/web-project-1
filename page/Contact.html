@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dazzling Designs</title>
+  <link rel="icon" type="image/x-icon" href="./image/Dazzling Designs p 512.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="navigation bg-dark">
+      <div class="container">
+        <nav>
+          <div class="menu">
+            <div class="row">
+              <div class="col-6">
+                <ul class="mainMenu d-flex align-items-center mb-0">
+                  <li><a href="./Home.html">Home</a></li>
+                  <li><a href="./Shop.html">Shop</a></li>
+                  <li><a href="./About.html">About US</a></li>
+                  <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-6 d-flex">
+                <div class="d-flex align-items-center mb-0 ms-auto">
+                  <span class="AddCart" data-bs-toggle="modal" data-bs-target="#exampleModal"><span
+                      class="cart total-count"></span><i class="fa-solid fa-cart-shopping text-light fs-5"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container">
+      <h1 id="home" class="mainHead mt-5"></h1>
+      <div class="row">
+        <section class="ftco-section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6 text-center mb-5">
+                <h2 class="heading-section">Contact Us</h2>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+                <div class="wrapper">
+                  <div class="row no-gutters">
+                    <div class="col-lg-6">
+                      <div class="contact-wrap w-100 p-md-5 p-4">
+                        <h3>Contact us</h3>
+                        <p class="mb-4">
+                          We're open for any suggestion or just to have a chat
+                        </p>
+                        <div id="form-message-warning" class="mb-4"></div>
+                        <div id="form-message-success" class="mb-4">
+                          Your message was sent, thank you!
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-md-4">
+                            <div class="dbox w-100 d-flex align-items-start">
+                              <div class="text">
+                                <p>
+                                  <span>Address:</span> 198 West 21th Street,
+                                  Suite 721 New York NY 10016
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="dbox w-100 d-flex align-items-start">
+                              <div class="text">
+                                <p>
+                                  <span>Email:</span>
+                                  <a
+                                    href="https://preview.colorlib.com/cdn-cgi/l/email-protection#335a5d555c734a5c4641405a47561d505c5e"><span
+                                      class="__cf_email__"
+                                      data-cfemail="11787f777e51687e6463627865743f727e7c">izat@gmail.com</span></a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="dbox w-100 d-flex align-items-start">
+                              <div class="text">
+                                <p>
+                                  <span>Phone:</span>
+                                  <a href="tel://1234567920">+ 1235 2355 98</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <form id="contactForm" name="contactForm" class="contactForm" onsubmit="return contactSubmit()">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Name" />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                  placeholder="Subject" />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="4"
+                                  placeholder="Create a message here"></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mt-2">
+                              <div class="form-group">
+                                <input type="submit" value="Send Message" class="btn btn-primary" />
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <div class="w-100 social-media mt-5">
+                          <h3>Follow us here</h3>
+                          <p>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 contect-img d-flex align-items-stretch mb-4">
+                      <div class="info-wrap w-100 p-5 img" style="background-image: url(image/contect-img.jpg)"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header py-2 px-4">
+              <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+              <span type="button" class="close" data-bs-dismiss="modal">
+                <span aria-hidden="true" class="fs-1">&times;</span>
+              </span>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table"></table>
+              <h4 class="text-end me-3">
+                Total price: £<span class="total-cart"></span>
+              </h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">Order now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END EDMO HTML (Happy Coding!)-->
+    </div>
+    <!-- END EDMO HTML (Happy Coding!)-->
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="../script.js"></script>
+  <script src="https://kit.fontawesome.com/e9f488f24b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
